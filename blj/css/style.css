@@ -1,0 +1,274 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+  .phd {
+  background-color: #1d1e1f;
+  color: #C7D6CB;
+  padding: 60px 15px;
+  font-family: 'Courier New', monospace;
+}
+
+.phd h2 {
+  font-family: 'Lobster', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  color: #A0FFB3;
+  margin-bottom: 30px;
+}
+
+.phd-intro p {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+
+.phd-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  color: #96ffcb;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.phd-quote img {
+
+max-width: 100%;
+border: 2px solid #96ffcb;;
+
+}
+
+
+
+
+.senke {
+  background-color: #0c0c0c;
+  background-image: url(../images/stitasti-ornament.png);
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 80px 20px;
+  color: #c0d6d2;
+  font-family: 'Special Elite', 'Courier New', monospace;
+}
+
+.senke h2 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: #82e0dd;
+  font-size: 30px;
+  margin-bottom: 35px;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 5px #001111;
+}
+
+.senke p {
+  max-width: 780px;
+  margin: 0 auto;
+  background-color: rgba(13, 21, 24, 0.55);
+  padding: 35px 25px;
+  border-left: 4px solid #82e0dd;
+  border-radius: 6px;
+  line-height: 1.85;
+  font-size: 18px;
+  box-shadow: 0 0 12px rgba(129, 212, 250, 0.05);
+}
+
+
+
+
+.pps {
+
+  background-color: #1a1225;
+
+}
+.pps img {
+
+max-width: 100%;
+max-height: 100%;
+}
+
+
+.luc {
+
+padding: 15px;
+background-color:#0c0c0c; 
+color: #96ffcb;
+text-align: center;
+}
+
+
+.luc h2 {
+
+  padding: 15px;
+}
+
+
+.animacija-ogledalo {
+ 
+  padding: 60px 0;
+  text-align: center;
+}
+
+.ogledalo {
+  width: 250px;
+  height: 400px;
+  margin: 0 auto;
+
+
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255,255,255,0.05);
+}
+
+.figura {
+  width: 80%;
+  height: 60%;
+  background: url('../images/silu.png') no-repeat center;
+  background-size: contain;
+  opacity: 0;
+  animation: pojaviSe 6s ease-in-out infinite;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+@keyframes pojaviSe {
+  0% { opacity: 0; transform: scale(1); }
+  45% { opacity: 1; transform: scale(1.02); }
+  70% { opacity: 0.8; }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+
+.prica-svezapasus {
+  background-color: #121212;
+  color: #c4c4c4;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  padding: 80px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid #2a2a2a;
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.03);
+  filter: contrast(1.1);
+  text-align: left;
+  line-height: 1.8;
+  text-shadow: 0 0 2px rgba(255,255,255,0.06);
+  animation: treptaj 4s infinite alternate;
+}
+
+.prica-svezapasus p {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.prica-svezapasus h2 {
+
+padding: 15px;
+
+}
+
+@keyframes treptaj {
+  0%   { opacity: 1; }
+  49%  { opacity: 0.98; }
+  50%  { opacity: 0.94; filter: brightness(1.02); }
+  51%  { opacity: 0.97; }
+  100% { opacity: 1; }
+}
+
+
+.mja {
+
+  padding: 25px;
+  background-color:#dfdbe3;
+  
+}
+
+.mja p {
+
+padding: 15px;
+text-align: center;
+
+}
+
+.mja h2 {
+
+
+  text-align: center;
+}
+
+
+.mja img {
+
+max-width: 100%;
+text-align: center;
+
+
+
+}
+
+
+.bm {
+
+padding: 10px;
+background-color:black;
+color:burlywood ;
+
+}
+
+.bm img {
+
+  max-width: 100%;
+
+}
+
+
+.footer-ps{
+  background-color: #0c0c0c;
+  color: #aaa;
+  padding: 30px 15px;
+  font-family: 'Spectral', serif;
+  font-size: 15px;
+  border-top: 1px solid #333;
+  
+}
+
+.footer-citat {
+  font-style: italic;
+  font-size: 16px;
+  color: #96ffcb;
+  margin-bottom: 12px;
+}
+
+.footer-info {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
+
