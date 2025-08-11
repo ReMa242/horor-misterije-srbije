@@ -276,12 +276,11 @@ background-color: #000000;
   text-align: center;
 }
 
-.drekavac img {
-
-max-width: 100%;
+.drekavac-prica img {
+  
+  max-width: 100%;
 
 }
-
 .drekavac-naslov {
   font-family: 'Creepster', cursive;
   font-size: 3.5rem;
