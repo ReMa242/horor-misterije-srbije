@@ -1,0 +1,277 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+
+overflow-x: hidden;
+background-color: #000;
+ 
+}
+
+
+
+/* HEADER STILOVI */
+.header {
+  background-color: black;
+  padding: 10px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.header h2 {
+
+  
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 3em;
+  color: #C0A060;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 10px rgba(192, 160, 96, 0.6);
+  background: radial-gradient(circle, #1a1a1a, #000000);
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+ 
+
+
+.header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* NAVIGACIJA */
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #C0A060;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #fff;
+}
+
+/* HAMBURGER */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color:#C0A060;
+  cursor:pointer;
+  margin-left: auto;
+}
+
+/* SAKRIVENI CHECKBOX */
+#menu-toggle {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    justify-content: space-between;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  #menu-toggle:checked + .menu-wrap .nav ul {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+}
+
+.rec {
+
+  padding: 30px;
+  text-align: center;
+  background-color: #C0A060;
+}
+
+.sk {
+
+  padding: 20px; 
+  background-color: #000000;
+  text-align: center;
+  border-bottom: 2px solid #C0A060; 
+}
+
+.sk img {
+
+  max-width: 100%;
+}
+
+.sk h3 {
+ 
+  color:#C0A060;
+  text-transform: uppercase;
+  
+
+}
+
+.sk video {
+
+  max-width: 100%;
+}
+
+.po {
+
+  padding: 20px;
+  text-align: center;
+  background-color: #000000;
+  
+}
+
+.po h3,h4,h5 {
+
+color: #C0A060;
+}
+
+/* HOROR STIL ZA FORMU U .frm */
+.frm {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: rgba(20, 20, 20, 0.95);
+    border: 2px solid #990000;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #ff0000;
+    font-family: 'Creepster', cursive, sans-serif;
+    animation: pulse-shadow 2s infinite alternate;
+    
+}
+
+.frm label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #ff5555;
+}
+
+.frm textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.frm textarea::placeholder {
+    color: #cc0000;
+    font-style: italic;
+}
+
+.frm button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.frm button:hover {
+    background-color: #990000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* Animacija pulsirajuće senke */
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 15px #ff0000;
+    }
+    100% {
+        box-shadow: 0 0 25px #ff0000;
+    }
+}
+
+
+.nbl  {
+
+  padding: 15px;
+color: #C0A060;
+
+
+}
+
+.nbl img {
+
+  max-width: 100%;
+}
+
+
+.nbl h3 {
+
+  padding: 40px;
+}
+
+footer {
+  background-color: #000;          /* crna pozadina */
+  color: #d4af37;                 /* zlatni tekst */
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid #d4af37;  /* tanka zlatna linija iznad */
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+footer a {
+  color: #d4af37;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;  /* kad pređe mišem preko linka */
+}
+
+footer p {
+  margin: 5px 0;
+}
